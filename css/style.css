@@ -1,0 +1,527 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    color: #6e7797;
+    font-family: Quicksand, sans-serif;
+    font-size: 14px;
+    line-height: 1.857
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000a2d;
+    font-family: Quicksand, sans-serif;
+    font-weight: 700
+}
+
+header {
+    background-color: rgba(2, 28, 85, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-right: 185px;
+    padding-left: 185px;
+    transition-duration: .3s;
+    z-index: 3
+}
+
+header.fixed-top {
+    animation: .3s ease-in-out 0s normal none 1 running fadeInDown;
+    background-color: #021c55
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+nav ul li a {
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    padding: 42.5px 18px;
+    text-decoration: none !important;
+}
+
+nav ul li.active a,
+nav ul li:hover a {
+    color: #eea676
+}
+
+nav ul li a::before {
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition-duration: .3s
+}
+
+/* nav ul li.active a::before,
+nav ul li:hover a::before {
+    background-color: #eea676;
+    width: 100%
+} */
+
+.dropdown-item:hover {
+    color: #021c55 !important;
+}
+
+.dropdown-menu a {
+    color: black !important;
+    padding: 10px 10px;
+    margin-right: 10px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-menu {
+    display: block;
+    margin-right: 150px !important;
+    background-color: rgb(222, 237, 238) !important;
+    border: 3px solid rgb(212, 204, 204) !important;
+    min-width: 135px !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(2, 28, 85, 0.2) !important;
+}
+
+.dropdown-menu:hover .dropdown-item {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.drop1 {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    opacity: 1;
+}
+
+.drop-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 450px;
+    height: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: normal;
+    line-height: 0.5rem;
+    transition: 2s;
+    opacity: 1;
+}
+
+.drop1:hover .drop-content1 {
+    display: block;
+    background-image: url("../images/pexels-leo-zhao-5767580.jpg");
+    color: white;
+    border: 5px solid white;
+    background-size: cover;
+   
+}
+
+.drop2 {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 450px;
+    height: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: normal;
+    line-height: 0.5rem;
+    transition: 2s;
+}
+
+.drop2:hover .drop-content2 {
+    display: block;
+    background-image: url("../images/gym2.jpg");
+    color: white;
+    border: 5px solid white;
+    background-size: cover;
+}
+
+.drop3 {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 450px;
+    height: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: normal;
+    line-height: 0.5rem;
+    transition: 2s;
+}
+
+.drop3:hover .drop-content3 {
+    display: block;
+    background-image: url("../images/pexels-raka-miftah-4253487\ \(1\).jpg");
+    color: white;
+    border: 5px solid white;
+    background-size: cover;
+    transition: 0.4s ease-in-out;
+}
+
+.navi-link {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.navi-link:hover {
+    text-decoration: none;
+    color: rgb(18, 171, 218);
+}
+
+hr {
+    width: 200px;
+    margin-left: 0;
+    background-color: white;
+}
+
+.navb-link {
+    color: #1b1a1a;
+    text-decoration: none;
+    display: flex;
+}
+
+.navb-link:hover {
+    color: #646161;
+    text-decoration: none;
+}
+
+.navibar-navi {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navibar {
+    margin-top: 109px;
+    padding: 20px;
+    position: relative;
+    /* height: 70px; */
+}
+
+.merry {
+    display: block;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+
+
+.btn {
+    background-color: #fff;
+    border-width: 2px;
+    border-radius: 0 30px 30px;
+    color: #056c5f;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 16px 38px
+}
+
+.btn i {
+    margin-right: 5px
+}
+
+.border-btn,
+.btn:hover {
+    background-color: transparent;
+    border-color: #eea676;
+    color: #eea676
+}
+
+.border-btn:hover {
+    background-color: #056c5f;
+    border-color: #056c5f;
+    color: #fff
+}
+
+.single-slider {
+    align-items: center;
+    display: flex;
+    min-height: 950px;
+    position: relative;
+    overflow: hidden
+}
+
+.slider-text span {
+    color: #eea676;
+    font-size: 20px
+}
+
+.slider-text h2 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1.111;
+    margin-top: 29px;
+    margin-bottom: 11px
+}
+.slider-text h3 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.111;
+    margin-top: 29px;
+    margin-bottom: 11px
+}
+
+.slider-text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5
+}
+
+.slider-btn {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 37px
+}
+
+.slider-btn a {
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px
+}
+
+.popup-video {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.popup-video i {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #056c5f;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 20px;
+    transition-duration: .3s
+}
+
+.popup-video:hover {
+    color: #eea676
+}
+
+.popup-video:hover i {
+    background-color: #eea676;
+    color: #fff
+}
+
+.slider-thumb {
+    position: absolute;
+    right: 88px;
+    bottom: 0
+}
+
+.slider-carousel .owl-dots {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 120px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.slider-carousel .owl-dots .owl-dot {
+    background-color: #fff;
+    height: 3px;
+    width: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+    transition-duration: .3s
+}
+
+.slider-carousel .owl-dots .owl-dot.active {
+    background-color: #eea676
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #021c55;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-top:30px;
+	
+}
+
+.maddress h1,
+h2,
+h3 {
+    color: whitesmoke;
+}
+
+.maddress h1,
+h2 {
+    font-size: 21px;
+    padding: 10px;
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 4.5rem;
+	
+}
+
+.addlist {
+    display: inline-flex;
+}
+
+.iconlist {
+    display: flex;
+}
+
+.iconlist i {
+    color: white;
+}
+
+.iconlist p {
+    padding-left: 2rem;
+}
+
+.twofacility {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fac3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	
+}
+.fac3 a
+{
+	padding-left:30px;
+	
+}
+
+.maddress h3 {
+    position: relative;
+    font-size: 21px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 4.5rem;
+}
+
+.iconlist p {
+    color: whitesmoke;
+}
+
+ul.implinks {
+    list-style: none;
+    text-align: center;
+}
+
+ul.implinks li a {
+    color: whitesmoke;
+}
+
+.fac3,
+ul li a:hover {
+    text-decoration: none;
+    color: rgb(120, 179, 247);
+	
+	
+}
+f
+.fac2,
+ul li a:hover {
+    text-decoration: none;
+}
+
+.fac1,
+ul li a:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+.mlinks p a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.mlinks p {
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: rgb(58, 57, 57);
+}
+
+#subfooter {
+    padding-top: 10px;
+    background: whitesmoke;
+}
+
+.mlinks a {
+    color: rgb(145, 143, 143);
+}
+
+.opacity-less {
+    opacity: 0.6;
+}
+
+.opacity-less:hover {
+    opacity: 0.9;
+    transition: 0.4s opacity ease-in-out;
+}
+
+
