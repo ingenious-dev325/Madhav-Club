@@ -367,12 +367,12 @@ hr {
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 120px;
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    bottom: 70px;
+    width: 100%;
     padding-right: 15px;
-    padding-left: 15px
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .slider-carousel .owl-dots .owl-dot {
@@ -387,7 +387,6 @@ hr {
 .slider-carousel .owl-dots .owl-dot.active {
     background-color: #eea676
 }
-
 
 
 
