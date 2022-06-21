@@ -19,34 +19,47 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#home">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Facilities</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Sports</a>
-                        <a class="dropdown-item" href="#">Accomodation</a>
-                        <a class="dropdown-item" href="#">Events</a>
-                        <a class="dropdown-item" href="#">Club Talk</a>
-                        <a class="dropdown-item" href="#">Entertaiment</a>
-                    </div>
-                </li>
-                <li><a href="#">Affiliation</a></li>
-                <li><a href="#">Committee</a></li>
-                <li class="dropdown">
-                    <a href="#">F&B</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Restaurant</a>
-                        <a class="dropdown-item" href="#">Bar</a>
-                    </div>
-                </li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-xl-2"><a href="./index.html" class=logo>
+                    <!--                <img alt="" src="{% static 'img/logo.png' %}">--></a>
+                    <center><h3 style="color:#fff;">Madhav Club.</h3></center>
+                </div>
+                <div class="col-xl-7 d-none d-xl-block" style="font-size:120%; margin-left:40px;">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#home">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#">Facilities</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Sports</a>
+                                    <a class="dropdown-item" href="#">Accomodation</a>
+                                    <a class="dropdown-item" href="#">Events</a>
+                                    <a class="dropdown-item" href="#">Club Talk</a>
+                                    <a class="dropdown-item" href="#">Entertaiment</a>
+                                </div>
+                            </li>
+                            <li><a href="#">Affiliation</a></li>
+                            <li><a href="#">Committee</a></li>
+                            <li class="dropdown">
+                                <a href="#">F&B</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Restaurant</a>
+                                    <a class="dropdown-item" href="#">Bar</a>
+                                </div>
+                            </li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-12 d-xl-none">
+                    <div class=mobile-menu></div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- <nav class="navibar navibar-expand-sm bg-light navibar-dark opacity-less">
         <ul class="navibar-navi navibar-navi-center opacity-less">
@@ -174,8 +187,8 @@
 
             <div class="col-lg-4 col-md-12 col-12 ">
                 <div class="maddress">
-                    <h3> About Us</h3>
-                    <div class="fac3">
+                    <h1>About Us</h1>
+                    <div class="fac2">
                         <ul class="implinks">
                             <LI> <a href="#"> History</a></LI>
                             <LI> <a href="#"> About Ujjain</a></LI>
@@ -197,17 +210,11 @@
 
                 <div class="mlinks">
                     <p>Copyright <span>&copy; Madhav Club Ujjain. Design with special care by <a href="https://codingenuity.com/index.html"> Codingenuity</a>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-12 col-12">
-  <div class="mfacebook">
-    <a href="#" class="facebook" target="fac">
-    <i class="fa fa-facebook-square fa-2x float-right " aria-hidden="true" id="fb"></i>
-  </a>
-  </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 </div>
-
     
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
