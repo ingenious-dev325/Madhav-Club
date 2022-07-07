@@ -7,7 +7,8 @@
     }), l("nav ul li:first-child").addClass("active");
     var t = l("nav ul li a, .slider-btn .btn");
     t.click(function(e) {
-        e.preventDefault(), l("body,html").animate({
+        // e.preventDefault(),
+        l("body,html").animate({
             scrollTop: l(this.hash).offset().top - 110
         }, 500)
     }), l(window).scroll(function() {
